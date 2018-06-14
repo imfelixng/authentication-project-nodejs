@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Index</title>
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./font/css/fontawesome-all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="menu">
+                <ul>
+                        <li><a href="/"><i class="fas fa-home"></i></a></li>
+                    <li><a href="/auth/logout"><i class="fas fa-sign-out-alt"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+            <img src= "<%=data.avatar%>" alt="image profile" class="img-profile" />
+            <h2 class="name"><%=data.name%></h2>
+            <h3 class="intro"><%=data.intro%></h3>
+            <div class="social">
+                    <a href="https://fb.com/nqa97" class = "ic-fb"><i class="fab fa-facebook-square" ></i></a>
+                    <a href="https://github.com/ngquangan" class="ic-gh"><i class="fab fa-github-square" ></i></a>
+                    <a href="mailto:ngquangan@gmail.com" class="ic-gg"><i class="fab fa-google-plus-square" ></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

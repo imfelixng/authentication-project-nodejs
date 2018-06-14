@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.dangnhap-social {
+    font-size: 5rem;
+    margin-top: 1rem;
+}
+
+.dangnhap-social a:hover {
+    cursor: pointer;
+}
+
+.dangnhap-social .ic-gg {
+    color: #dc4a38;
+}
+
+.dangnhap-social .ic-fb {
+    color: #3b5998;
+}
+
+form.formlogin {
+    height: 50rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+form.formregister {
+    height: 55rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: none;
+}
+
+form.formlogin label {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 2rem;
+    display: inline-block;
+}
+
+form.formlogin input:first-child {
+    margin-top: 8rem;
+}
+
+form.formregister input:first-child {
+    margin-top: 5rem;
+}
+
+form.formlogin input {
+    height: 4rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 80%;
+    margin-top: 3rem;
+    padding-left: 10px;
+}
+
+form.formregister input {
+    height: 4rem;
+    border: none;
+    border-radius: 0.5rem;
+    width: 80%;
+    margin-top: 3rem;
+    padding-left: 10px;
+}
+
+.btn {
+    font-weight: 500;
+    color: #fff;
+    padding-left: 0 !important;
+}
+
+.btn-google {
+    background-color: #dc4a38;
+}
+
+.btn-facebook {
+    background-color: #3b5998;
+}
+
+btn:hover {
+    cursor: pointer !important;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    width: 50rem;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.7;
+    font-family: 'Courier New', Courier, monospace;
+    box-sizing: border-box;
+}
+
+.container{
+    height: 100vh;
+    background-image: linear-gradient(to top, rgba(255, 0, 0, 0.4), rgba(0, 128, 0, 0.4)), url('../images//background.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.container .menu a {display: inline-block;height: 4rem;}
+
+.container .menu a i {
+    font-size: 40px;
+    color: #fff;
+}
+
+.container .menu ul {
+    list-style: none;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.container .menu img {
+    width: 4rem;
+    border-radius: 100%;
+}
+
+.container .menu ul li {
+    height: 4rem;
+    margin: 0 10px;
+}
+
+.container .menu {
+    height: 100%;
+    float: right;
+}
+
+.container nav {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    z-index: 0;
+}
+
+.active{
+    display: block !important;
+}

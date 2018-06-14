@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="./font/css/fontawesome-all.min.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="content">
+            <%if(message){%>
+                <h1><%=message%></h1>
+            <%}%>
+            <form action="/auth/login" method="post" class="formlogin active">
+                <input type="text" name="email" placeholder="Nhập vào email" required/><br>
+                <input type="password" name="password" placeholder="Nhập vào password" required/><br>
+                <input type="submit" value="Đăng Nhập" class="btn btn-facebook"><br>
+                <input type="button" value="Đăng Ký" class="btn btn-google btn-dangky"><br>
+                <label >Đăng nhập với</label><br>
+                <div class="dangnhap-social">
+                    <a href="/auth/facebook" class = "ic-fb"><i class="fab fa-facebook-square" ></i></a>
+                    <a href="/auth/google" class="ic-gg"><i class="fab fa-google-plus-square" ></i></a>
+                </div>
+            </form>
+            <form action="/auth/register" method="post" class="formregister">
+                <input type="text" name="hoten" placeholder="Nhập vào họ tên" required/><br>
+                <input type="text" name="gioithieu" placeholder="Nhập vào giới thiệu" required/><br>
+                <input type="text" name="email" placeholder="Nhập vào email" required/><br>
+                <input type="password" name="password" placeholder="Nhập vào password" required/><br>
+                <input type="password" name="nhaplaipassword" placeholder="Nhập lại password" required/><br>
+                <input type="submit" value="Đăng Ký" class="btn btn-google"><br>
+                <input type="button" value="Đăng Nhập" class="btn btn-facebook btn-dangnhap">
+            </form>
+        </div>
+    </div>
+
+    <script src="./js/login.js"></script>
+</body>
+</html>
