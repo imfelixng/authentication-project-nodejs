@@ -34,7 +34,6 @@ passport.use(new GoogleStrategy({
                     avatar: getUrlAvatar(profile._json.image.url),
                     email: profile.emails[0].value   
                 }).save().then(newUser => {
-                    console.log(newUser);
                     done(null, newUser);
                 });
             }

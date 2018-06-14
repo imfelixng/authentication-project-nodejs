@@ -57,6 +57,6 @@ app.get('/login', (req, res) => {
     res.render('login', {user: null, message: message});
 });
 
-app.listen(5000,() => {
-    console.log("Server dang chay o cong 5000");
+app.listen(3000,() => {
+    console.log("Server dang chay o cong 3000");
 });
